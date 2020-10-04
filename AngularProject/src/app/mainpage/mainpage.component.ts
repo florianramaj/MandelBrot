@@ -82,6 +82,7 @@ export class MainpageComponent implements OnInit {
           
         }
         context.fillRect(index, index2, 1, 1);
+        console.log("X " + index + " Y " + index2);
 
 
        // context.fillStyle = "red"
