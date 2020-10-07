@@ -97,19 +97,13 @@ namespace MandelbrotCSharp.ViewModels
             await Task.Run(() =>
             {
                 double maxIt = 100;
-                // this.Points = new List<Point>();
-                MandelbrotCSharp.Models.Image image = new MandelbrotCSharp.Models.Image(400, 400);
-
-                
-
+              
                 Parallel.For(0, 400, index =>
                 {
                     Parallel.For(0,400, index2 =>
                     {
-
                         double amount = 0.0;
                         ComplexNumber number = new ComplexNumber();
-
                         int counter = 0;
                         double cReal = (index - (400 / 2.0)) / (400 / 4.0);
                         double cImag = (index2 - (400 / 2.0)) / (400 / 4.0);
@@ -122,7 +116,7 @@ namespace MandelbrotCSharp.ViewModels
 
                             number = this.Calculator.Add(numberHelp, c);
                             number = c + numberHelp;
-                            amount = number.Real * number.Real + number.Imag * number.Imag;
+                            amount = this.Calculator.Amount(number);
 
                             if (amount > 4)
                             {
@@ -132,27 +126,18 @@ namespace MandelbrotCSharp.ViewModels
                             counter++;
                         }
 
-                        //Rectangle rec = new Rectangle();
-                        //rec.Width = 1;
-                        //rec.Height = 1;
-
-                        //rec.Fill = Brushes.Black;
+                        lock (this.lockerTemp)
+                        {
+                            bitmap.SetPixel(index, index2, System.Drawing.Color.Black);
+                        }
 
                         if (counter == maxIt)
                         {
-                            //rec.Fill = System.Windows.Media.Brushes.Red;
-                            //this.Points.Add(new Point(index, index2));
-                            // Debug.WriteLine("X " + index + " Y " + index2);
                             lock (this.lockerTemp)
                             {
                                 bitmap.SetPixel(index, index2, System.Drawing.Color.Red);
                             }
-                            //this.Image = this.ToBitmapImage(bitmap);
                         }
-
-                        //Canvas.SetLeft(rec, index);
-                        //Canvas.SetTop(rec, index2);
-                        //canvas.Children.Add(rec);
                     });
 
 

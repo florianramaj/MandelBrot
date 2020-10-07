@@ -35,7 +35,6 @@ C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\Mandelbro
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\bin\Debug\MandelbrotCSharp.pdb
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\View\MainWindow.g.cs
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\App.g.cs
-C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\MandelbrotCSharp_MarkupCompile.cache
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\MandelbrotCSharp_MarkupCompile.lref
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\View\MainWindow.baml

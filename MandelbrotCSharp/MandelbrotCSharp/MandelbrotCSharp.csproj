@@ -67,11 +67,6 @@
     <Compile Include="Commands\Commands.cs" />
     <Compile Include="Models\ComplexCalculator.cs" />
     <Compile Include="Models\ComplexNumber.cs" />
-    <Compile Include="Models\Image.cs" />
-    <Compile Include="PathConverter.cs" />
-    <Compile Include="ViewModels\ComplexCalculatorVM.cs" />
-    <Compile Include="ViewModels\ComplexNumberVM.cs" />
-    <Compile Include="ViewModels\FunctionVM.cs" />
     <Compile Include="ViewModels\MandelBrotManagerVM.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
