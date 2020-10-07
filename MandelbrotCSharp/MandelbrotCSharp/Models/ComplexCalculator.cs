@@ -29,13 +29,6 @@ namespace MandelbrotCSharp.Models
             return result;
         }
 
-        public double Amount(ComplexNumber complexNumber)
-        {
-            double result = 0;
-
-            result = complexNumber.Real * complexNumber.Real + complexNumber.Imag * complexNumber.Imag;
-
-            return result;
-        }
+        public double Amount(ComplexNumber complexNumber) => complexNumber.Real * complexNumber.Real + complexNumber.Imag * complexNumber.Imag;
     }
 }

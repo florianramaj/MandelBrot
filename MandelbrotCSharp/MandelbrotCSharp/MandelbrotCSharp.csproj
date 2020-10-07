@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -66,6 +67,7 @@
     <Compile Include="Commands\Commands.cs" />
     <Compile Include="Models\ComplexCalculator.cs" />
     <Compile Include="Models\ComplexNumber.cs" />
+    <Compile Include="Models\Image.cs" />
     <Compile Include="PathConverter.cs" />
     <Compile Include="ViewModels\ComplexCalculatorVM.cs" />
     <Compile Include="ViewModels\ComplexNumberVM.cs" />

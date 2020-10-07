@@ -26,7 +26,7 @@ namespace MandelbrotCSharp.View
         public MainWindow()
         {
             this.InitializeComponent();
-            this.ManagerVM = new MandelBrotManagerVM(canvas);
+            this.ManagerVM = new MandelBrotManagerVM();
             this.DataContext = this.ManagerVM;
 
         }

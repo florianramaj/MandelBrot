@@ -49,5 +49,9 @@ namespace MandelbrotCSharp.Models
                 this.imag = value;
             }
         }
+
+        public static ComplexNumber operator +(ComplexNumber a, ComplexNumber b) => new ComplexNumber(a.Real + b.Real, a.Imag + b.Imag);
+
+        public static ComplexNumber operator -(ComplexNumber number) => new ComplexNumber(number.real * number.real - number.imag * number.imag, 2.0 * number.Real * number.Imag);
     }
 }

@@ -16,8 +16,6 @@
             <ColumnDefinition/>
          </Grid.ColumnDefinitions>
         <Button Command="{Binding CalculateCommand}" Height="50">Calculate</Button>
-        <Canvas x:Name="canvas" Background="Black" Grid.Column="1" Width="400" Height="400">
-            
-        </Canvas>
+        <Image Grid.Column="1" Source="{Binding Path=Image, Mode=OneWay}"></Image>
     </Grid>
 </Window>

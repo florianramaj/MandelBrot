@@ -33,7 +33,6 @@ C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelbrotCSharp\Man
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\bin\Debug\MandelbrotCSharp.exe.config
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\bin\Debug\MandelbrotCSharp.exe
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\bin\Debug\MandelbrotCSharp.pdb
-C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\MandelbrotCSharp.csprojAssemblyReference.cache
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\View\MainWindow.g.cs
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\App.g.cs
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\GeneratedInternalTypeHelper.g.cs
@@ -46,3 +45,4 @@ C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\Mandelbro
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\MandelbrotCSharp.csproj.CoreCompileInputs.cache
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\MandelbrotCSharp.exe
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\MandelbrotCSharp.pdb
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotCSharp\obj\Debug\MandelbrotCSharp.csprojAssemblyReference.cache
