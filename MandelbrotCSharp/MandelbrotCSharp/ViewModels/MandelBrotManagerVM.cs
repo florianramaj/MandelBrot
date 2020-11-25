@@ -31,7 +31,6 @@ namespace MandelbrotCSharp.ViewModels
 
         public MandelBrotManagerVM()
         {
-            this.canvas = canvas;
             this.Calculator = new ComplexCalculator();
             this.lockerTemp = new object();
 
@@ -49,8 +48,6 @@ namespace MandelbrotCSharp.ViewModels
                 this.calculator = value;
             }
         }
-
-        private static object locker = new object();
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -171,31 +168,6 @@ namespace MandelbrotCSharp.ViewModels
 
                     Bitmap map = await this.Calculate();
                     this.Image = this.ToBitmapImage(map);
-
-                    /*
-                    int intervall = 10;
-                    int canvasHelpBegin = 0;
-                    int canvasHelpEnd = (int)this.canvas.Width / intervall;
-                    int different = (int)this.canvas.Width / intervall;
-
-
-                    
-                    for (int i = 0; i < intervall; i++)
-                    {
-                        Thread thread = new Thread(delegate () { this.Calculate(canvasHelpBegin, canvasHelpEnd); });
-
-                        if(i == intervall)
-                        {
-                            break;
-                        }
-                        canvasHelpBegin = canvasHelpEnd;
-                        canvasHelpEnd += different;
-                        thread.Start();
-                        Thread.Sleep(50);
-                    }*/
-
-
-
                 });
             }
         }

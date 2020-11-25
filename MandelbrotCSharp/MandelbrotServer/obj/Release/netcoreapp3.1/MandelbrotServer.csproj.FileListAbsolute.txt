@@ -1,0 +1,21 @@
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\MandelbrotServerRamaj - Web Deploy\profile.arm.json
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\MandelbrotServer.exe
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\MandelbrotServer.deps.json
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\MandelbrotServer.runtimeconfig.json
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\MandelbrotServer.runtimeconfig.dev.json
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\MandelbrotServer.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Release\netcoreapp3.1\MandelbrotServer.pdb
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.AssemblyInfoInputs.cache
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.AssemblyInfo.cs
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.csproj.CoreCompileInputs.cache
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.RazorTargetAssemblyInfo.cache
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\staticwebassets\MandelbrotServer.StaticWebAssets.Manifest.cache
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\staticwebassets\MandelbrotServer.StaticWebAssets.xml
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.pdb
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.genruntimeconfig.cache
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\obj\Release\netcoreapp3.1\MandelbrotServer.csprojAssemblyReference.cache
