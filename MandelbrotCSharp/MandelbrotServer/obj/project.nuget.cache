@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QcDgUTF0YGeU1SBexuEIwktLMNHlWfSDm7YY5YlOyKcshaRpDIj8C4qOY5gBFjyJJotT0bvmA8tyHXmx0tnXjg==",
+  "dgSpecHash": "GfBVVBVsC9q8BTXrHFERtd92TigXWIAxJqXlWpUr9nPKdY3b+i8+0FRWVkwT8FPb1Q8QCgyyEBNv0fFPTrjyyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\MandelbrotServer\\MandelbrotServer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ramaj\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

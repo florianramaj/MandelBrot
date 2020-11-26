@@ -1,0 +1,9 @@
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\bin\Debug\netcoreapp3.1\MandelbrotLib.deps.json
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\bin\Debug\netcoreapp3.1\MandelbrotLib.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\bin\Debug\netcoreapp3.1\MandelbrotLib.pdb
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.AssemblyInfoInputs.cache
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.AssemblyInfo.cs
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.csproj.CoreCompileInputs.cache
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.pdb
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.csprojAssemblyReference.cache

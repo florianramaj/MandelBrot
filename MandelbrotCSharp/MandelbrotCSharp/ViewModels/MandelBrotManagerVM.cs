@@ -1,5 +1,6 @@
 ﻿using MandelbrotCSharp.Commands;
 using MandelbrotCSharp.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,6 +10,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
@@ -24,15 +26,16 @@ namespace MandelbrotCSharp.ViewModels
 {
     public class MandelBrotManagerVM : INotifyPropertyChanged
     {
+        private static readonly HttpClient httpClient = new HttpClient();
         private ComplexCalculator calculator;
         private Canvas canvas;
         private BitmapImage image;
-        private object lockerTemp;
+        
 
         public MandelBrotManagerVM()
         {
             this.Calculator = new ComplexCalculator();
-            this.lockerTemp = new object();
+            
 
         }
 
@@ -89,58 +92,7 @@ namespace MandelbrotCSharp.ViewModels
 
         public async Task<Bitmap> Calculate()
         {
-            Bitmap bitmap = new Bitmap(400, 400);
-
-            await Task.Run(() =>
-            {
-                double maxIt = 100;
-              
-                Parallel.For(0, 400, index =>
-                {
-                    Parallel.For(0,400, index2 =>
-                    {
-                        double amount = 0.0;
-                        ComplexNumber number = new ComplexNumber();
-                        int counter = 0;
-                        double cReal = (index - (400 / 2.0)) / (400 / 4.0);
-                        double cImag = (index2 - (400 / 2.0)) / (400 / 4.0);
-                        ComplexNumber c = new ComplexNumber(cReal, cImag);
-
-                        while (counter < maxIt)
-                        {
-                            ComplexNumber numberHelp = new ComplexNumber();
-                            numberHelp = this.Calculator.Sqaure(number);
-
-                            number = this.Calculator.Add(numberHelp, c);
-                            number = c + numberHelp;
-                            amount = this.Calculator.Amount(number);
-
-                            if (amount > 4)
-                            {
-                                break;
-                            }
-
-                            counter++;
-                        }
-
-                        lock (this.lockerTemp)
-                        {
-                            bitmap.SetPixel(index, index2, System.Drawing.Color.Black);
-                        }
-
-                        if (counter == maxIt)
-                        {
-                            lock (this.lockerTemp)
-                            {
-                                bitmap.SetPixel(index, index2, System.Drawing.Color.Red);
-                            }
-                        }
-                    });
-
-
-                });
-
-            });
+           
 
             return bitmap;
 
@@ -165,6 +117,22 @@ namespace MandelbrotCSharp.ViewModels
             {
                 return new Command(async obj =>
                 {
+
+                    var json = JsonConvert.SerializeObject(new CalculationRequest() { Height = 400, Width = 400 });
+                    var data = new StringContent(json, Encoding.UTF8, "application/json");
+                    var response = await httpClient.PostAsync("http://localhost:62602/api/client", data);
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    var valueList = JsonConvert.DeserializeObject<List<TripleResult>>(responseString);
+
+                    /*
+                     * var bitmap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+
+                     //dto
+                     foreach (var value in valueList)
+                    {
+                        bitmap.SetPixel(value.X, value.Y, value.Iteration < 100 ? Color.Black : Color.White);
+                    }*/
+
 
                     Bitmap map = await this.Calculate();
                     this.Image = this.ToBitmapImage(map);
