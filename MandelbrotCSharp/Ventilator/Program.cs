@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using NetMQ;
 using NetMQ.Sockets;
 
@@ -15,8 +16,7 @@ namespace Ventilator
             using (var sender = new PushSocket("@tcp://*:80"))
             using (var sink = new PullSocket(">tcp://localhost:8080"))
             {
-                Console.WriteLine("Press enter when worker are ready");
-                Console.ReadLine();
+                Thread.Sleep(1000);
                 //the first message it "0" and signals start of batch
                 //see the Sink.csproj Program.cs file for where this is used
                 Console.WriteLine("Sending start of batch to Sink");

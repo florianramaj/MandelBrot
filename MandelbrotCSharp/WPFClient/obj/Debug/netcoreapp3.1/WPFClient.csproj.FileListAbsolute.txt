@@ -37,3 +37,4 @@ C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\Mandelbro
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\WPFClient\bin\Debug\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\WPFClient\bin\Debug\netcoreapp3.1\Sink.dll
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\WPFClient\bin\Debug\netcoreapp3.1\Sink.pdb
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\WPFClient\bin\Debug\netcoreapp3.1\WPFClient.dll.config

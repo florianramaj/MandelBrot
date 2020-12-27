@@ -6,4 +6,3 @@ C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\Mandelbro
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.csproj.CoreCompileInputs.cache
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.dll
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.pdb
-C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotLib\obj\Debug\netcoreapp3.1\MandelbrotLib.csprojAssemblyReference.cache

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -24,6 +25,9 @@ namespace Worker
             // Connects PUSH socket to tcp://localhost:5558
             // Sends results to Sink via that socket
             Console.WriteLine("====== WORKER ======");
+
+            var mainServer = ConfigurationManager.AppSettings.Get("mainServer");
+
             using (var receiver = new PullSocket(">tcp://localhost:80"))
             using (var sender = new PushSocket(">tcp://localhost:400"))
             {

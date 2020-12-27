@@ -11,7 +11,13 @@
             <ColumnDefinition Width="100"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Command="{Binding CalculateCommand}" Height="50">Calculate</Button>
-        <Image Grid.Column="1" Source="{Binding Path=Image, Mode=OneWay}"></Image>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Command="{Binding CalculateCommand}" Height="50">Start Ventilator</Button>
+        <Button Grid.Row="1" Command="{Binding ServerCommand}" Height="50">Calculate</Button>
+        <Image Grid.RowSpan="2" Grid.Column="1"  Source="{Binding Path=Image, Mode=OneWay}"></Image>
+     
     </Grid>
 </Window>

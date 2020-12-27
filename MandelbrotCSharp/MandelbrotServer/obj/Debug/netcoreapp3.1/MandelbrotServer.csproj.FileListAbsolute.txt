@@ -31,3 +31,14 @@ C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\Mandelbro
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\WPFClient.dll
 C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\WPFClient.pdb
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\Sink.exe
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\AsyncIO.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\NaCl.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\NetMQ.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\System.Net.Http.WinHttpHandler.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\System.ServiceModel.Primitives.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Net.Http.WinHttpHandler.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\Sink.dll
+C:\Users\ramaj\Schule\FH_5Semester\VerteilteSysteme\GitRepo\MandelBrot\MandelbrotCSharp\MandelbrotServer\bin\Debug\netcoreapp3.1\Sink.pdb
