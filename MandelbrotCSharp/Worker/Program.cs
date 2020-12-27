@@ -1,5 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net.Http;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
 using System.Threading;
+using MandelbrotLib;
 using NetMQ;
 using NetMQ.Sockets;
 using Newtonsoft.Json;
@@ -35,11 +42,25 @@ namespace Worker
                     var calculator = new Calculator();
 
                     var result = calculator.Calculate(Convert.ToInt32(workLoadArray[0]), Convert.ToInt32(workLoadArray[1]), Convert.ToInt32(workLoadArray[2]), 400);
+                 
 
+                    byte[] dataGame;
+                    BinaryFormatter binaryFormatter = new BinaryFormatter();
+
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        binaryFormatter.Serialize(memoryStream, result);
+                        dataGame = memoryStream.ToArray();
+                    }
 
                     Console.WriteLine("Sending to Sink");
+                    sender.SendFrame(dataGame);
 
-                    sender.SendFrame(string.Empty);
+                    
+
+                    
+
+                    
                 }
             }
         }

@@ -56,6 +56,64 @@
         }
       }
     },
+    "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\Sink\\Sink.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\Sink\\Sink.csproj",
+        "projectName": "Sink",
+        "projectPath": "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\Sink\\Sink.csproj",
+        "packagesPath": "C:\\Users\\ramaj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\Sink\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ramaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NetMQ": {
+              "target": "Package",
+              "version": "[4.0.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\WPFClient\\WPFClient.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -81,6 +139,9 @@
             "projectReferences": {
               "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\MandelbrotLib\\MandelbrotLib.csproj": {
                 "projectPath": "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\MandelbrotLib\\MandelbrotLib.csproj"
+              },
+              "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\Sink\\Sink.csproj": {
+                "projectPath": "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\Sink\\Sink.csproj"
               }
             }
           }

@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
 using NetMQ;
 using NetMQ.Sockets;
 namespace Sink
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -23,10 +27,17 @@ namespace Sink
                 //Start our clock now
                 var watch = Stopwatch.StartNew();
 
-                for (int taskNumber = 0; taskNumber < 100; taskNumber++)
+                for (int taskNumber = 0; taskNumber < 400; taskNumber= taskNumber+10)
                 {
-                    var workerDoneTrigger = receiver.ReceiveFrameString();
-                    
+                    var workerDoneTrigger = receiver.ReceiveFrameBytes();
+                    List<(int, int, int)> gameField = null;
+                    BinaryFormatter binaryFormatter2 = new BinaryFormatter();
+
+                    using (var memoryStream2 = new MemoryStream(workerDoneTrigger))
+                    {
+                        gameField = (List<(int, int, int)>)binaryFormatter2.Deserialize(memoryStream2);
+                    }
+
                 }
                 watch.Stop();
                 //Calculate and report duration of batch

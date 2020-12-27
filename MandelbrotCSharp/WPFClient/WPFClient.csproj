@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MandelbrotLib\MandelbrotLib.csproj" />
+    <ProjectReference Include="..\Sink\Sink.csproj" />
   </ItemGroup>
 
 </Project>
