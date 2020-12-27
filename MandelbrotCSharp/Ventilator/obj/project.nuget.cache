@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZjD0D7kBPC8YdwcVlLcJDExTV/0EhXa5Gk9BxrI7vAN/wx2YfxduZZQhWZ+hJ6mSkh8udpCLQ4EfbQE4/tZTEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ramaj\\Schule\\FH_5Semester\\VerteilteSysteme\\GitRepo\\MandelBrot\\MandelbrotCSharp\\Ventilator\\Ventilator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ramaj\\.nuget\\packages\\asyncio\\0.1.69\\asyncio.0.1.69.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\nacl.net\\0.1.13\\nacl.net.0.1.13.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\netmq\\4.0.1.6\\netmq.4.0.1.6.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\system.net.http.winhttphandler\\4.4.0\\system.net.http.winhttphandler.4.4.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\system.private.servicemodel\\4.4.0\\system.private.servicemodel.4.4.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\system.reflection.dispatchproxy\\4.4.0\\system.reflection.dispatchproxy.4.4.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\system.security.principal.windows\\4.4.0\\system.security.principal.windows.4.4.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\system.servicemodel.primitives\\4.4.0\\system.servicemodel.primitives.4.4.0.nupkg.sha512",
+    "C:\\Users\\ramaj\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

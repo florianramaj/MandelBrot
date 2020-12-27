@@ -137,5 +137,64 @@ namespace WPFClient.Model
 
             return valueList;
         }
+
+
+        public List<(int, int, int)> Calculate(int lower, int upper, int height, int width)
+        {
+            //Bitmap bitmap = new Bitmap(width, height);
+            var valueList = new List<(int, int, int)>();
+
+
+            double maxIt = 100;
+
+            Parallel.For(lower, upper, index =>
+            {
+                Parallel.For(0, height, index2 =>
+                {
+                    double amount = 0.0;
+                    ComplexNumber number = new ComplexNumber();
+                    int counter = 0;
+                    double cReal = (index - (width / 2.0)) / (width / 4.0);
+                    double cImag = (index2 - (height / 2.0)) / (height / 4.0);
+                    ComplexNumber c = new ComplexNumber(cReal, cImag);
+
+                    while (counter < maxIt)
+                    {
+                        ComplexNumber numberHelp = new ComplexNumber();
+                        numberHelp = this.ComplexCalculator.Sqaure(number);
+
+                        number = this.ComplexCalculator.Add(numberHelp, c);
+                        number = c + numberHelp;
+                        amount = this.ComplexCalculator.Amount(number);
+
+                        if (amount > 4)
+                        {
+                            break;
+                        }
+
+                        counter++;
+                    }
+
+                    lock (this.lockerTemp)
+                    {
+                        valueList.Add((index, index2, counter));
+                        // bitmap.SetPixel(index, index2, System.Drawing.Color.Black);
+                    }
+
+                    /*
+                    if (counter == maxIt)
+                    {
+                        lock (this.lockerTemp)
+                        {
+                            bitmap.SetPixel(index, index2, System.Drawing.Color.Red);
+                        }
+                    }*/
+                });
+
+
+            });
+
+            return valueList;
+        }
     }
 }

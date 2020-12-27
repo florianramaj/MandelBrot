@@ -21,19 +21,14 @@ namespace MandelbrotServer.Controllers
 
             var result = calculator.Calculate(calculationRequest.Height, calculationRequest.Width);
             
-            var resultDto = result.Select(item => new TripleResult()
+            var resultTripkeResult = result.Select(item => new TripleResult()
             {
                 X = item.Item1,
                 Y = item.Item2,
                 Iteration = item.Item3
             }).ToList();
-
-            //var resultDto = result.Select(item => new TripleResultNew()
-            //{
-            //    Result = item
-            //}).ToList();
             
-            return Ok(resultDto);
+            return Ok(resultTripkeResult);
 
         }
 
