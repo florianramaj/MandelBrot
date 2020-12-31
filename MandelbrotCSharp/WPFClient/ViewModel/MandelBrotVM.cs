@@ -110,9 +110,6 @@ namespace WPFClient.ViewModel
                         var valueList = JsonConvert.DeserializeObject<List<TripleResult>>(responseString);
                         */
 
-
-
-
                         List<(int, int, int)> valueList = new List<(int, int, int)>();
 
                         //socket to receive messages on
