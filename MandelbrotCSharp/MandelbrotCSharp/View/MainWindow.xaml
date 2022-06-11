@@ -10,9 +10,18 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
             <ColumnDefinition/>
-         </Grid.ColumnDefinitions>
-        <Button Command="{Binding CalculateCommand}" Height="50">Calculate</Button>
-        <Image Grid.Column="1" Source="{Binding Path=Image, Mode=OneWay}"></Image>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.RowSpan="3" Command="{Binding CalculateCommand}" Height="50">Calculate</Button>
+        <Image Grid.RowSpan="3" Grid.Column="2" Source="{Binding Path=Image, Mode=OneWay}"></Image>
+        <Label Grid.Row="0" Grid.Column="1" Content="{Binding Path=Stopwatch}"></Label>
+        <TextBox Grid.Row="1" Height="30" Grid.Column="1" Text="{Binding Path=Height}"></TextBox>
+        <TextBox Grid.Row="2" Height="30" Grid.Column="1" Text="{Binding Path=Width}"></TextBox>
     </Grid>
 </Window>

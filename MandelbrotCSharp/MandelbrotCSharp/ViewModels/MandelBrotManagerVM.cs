@@ -28,6 +28,10 @@ namespace MandelbrotCSharp.ViewModels
         private Canvas canvas;
         private BitmapImage image;
         private object lockerTemp;
+        private string stopwatch;
+        private int height = 800;
+        private int width = 800;
+
 
         public MandelBrotManagerVM()
         {
@@ -56,11 +60,11 @@ namespace MandelbrotCSharp.ViewModels
 
         public Bitmap ToBitmap()
         {
-            Bitmap bitmap = new Bitmap(400, 400);
+            Bitmap bitmap = new Bitmap(this.Width, this.Height);
 
-            for (int i = 0; i < 400; i++)
+            for (int i = 0; i < this.Width; i++)
             {
-                for (int j = 0; j < 400; j++)
+                for (int j = 0; j < this.Height; j++)
                 {
                     bitmap.SetPixel(i, j, System.Drawing.Color.Red);
                 }
@@ -92,65 +96,103 @@ namespace MandelbrotCSharp.ViewModels
 
         public async Task<Bitmap> Calculate()
         {
-            Bitmap bitmap = new Bitmap(400, 400);
+            Bitmap bitmap = new Bitmap(this.Width, this.Height);
+
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
 
             await Task.Run(() =>
             {
                 double maxIt = 100;
-              
-                Parallel.For(0, 400, index =>
+
+                Parallel.For(0, this.Width, index =>
                 {
-                    Parallel.For(0,400, index2 =>
-                    {
-                        double amount = 0.0;
-                        ComplexNumber number = new ComplexNumber();
-                        int counter = 0;
-                        double cReal = (index - (400 / 2.0)) / (400 / 4.0);
-                        double cImag = (index2 - (400 / 2.0)) / (400 / 4.0);
-                        ComplexNumber c = new ComplexNumber(cReal, cImag);
+                    Parallel.For(0, this.Height, index2 =>
+                     {
+                         double amount = 0.0;
+                         ComplexNumber number = new ComplexNumber();
+                         int counter = 0;
+                         double cReal = (index - (this.Width / 2.0)) / (this.Height / 4.0);
+                         double cImag = (index2 - (this.Width / 2.0)) / (this.Height / 4.0);
+                         ComplexNumber c = new ComplexNumber(cReal, cImag);
 
-                        while (counter < maxIt)
-                        {
-                            ComplexNumber numberHelp = new ComplexNumber();
-                            numberHelp = this.Calculator.Sqaure(number);
+                         while (counter < maxIt)
+                         {
+                             ComplexNumber numberHelp = new ComplexNumber();
+                             numberHelp = this.Calculator.Sqaure(number);
 
-                            number = this.Calculator.Add(numberHelp, c);
-                            number = c + numberHelp;
-                            amount = this.Calculator.Amount(number);
+                             number = this.Calculator.Add(numberHelp, c);
+                             number = c + numberHelp;
+                             amount = this.Calculator.Amount(number);
 
-                            if (amount > 4)
-                            {
-                                break;
-                            }
+                             if (amount > 4)
+                             {
+                                 break;
+                             }
 
-                            counter++;
-                        }
+                             counter++;
+                         }
 
-                        lock (this.lockerTemp)
-                        {
-                            bitmap.SetPixel(index, index2, System.Drawing.Color.Black);
-                        }
+                         lock (this.lockerTemp)
+                         {
+                             bitmap.SetPixel(index, index2, System.Drawing.Color.Black);
+                         }
 
-                        if (counter == maxIt)
-                        {
-                            lock (this.lockerTemp)
-                            {
-                                bitmap.SetPixel(index, index2, System.Drawing.Color.Red);
-                            }
-                        }
-                    });
+                         if (counter == maxIt)
+                         {
+                             lock (this.lockerTemp)
+                             {
+                                 bitmap.SetPixel(index, index2, System.Drawing.Color.Red);
+                             }
+                         }
+                     });
 
 
                 });
 
             });
 
+            sw.Stop();
+
+            var ts = sw.Elapsed;
+
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+
+            this.Stopwatch = elapsedTime;
+
             return bitmap;
 
         }
 
+        public string Stopwatch
+        {
+            get => this.stopwatch;
+            set
+            {
+                this.stopwatch = value ?? throw new ArgumentNullException(nameof(this.Stopwatch));
+                this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Stopwatch)));
+            }
+        }
 
+        public int Width
+        {
+            get => this.width;
+            set
+            {
+                this.width = value;
+                this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Width)));
+            }
+        }
 
+        public int Height
+        {
+            get => this.height;
+            set
+            {
+                this.height = value;
+                this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Height)));
+            }
+        }
 
         public BitmapImage Image
         {
